@@ -41,6 +41,7 @@ while True:
       x = np.zeros([250, 250, 3], dtype = np.uint8)
       clr = frame[yVal][xVal]
       print(clr)
+      x[:,:] = clr
       cv2.imshow('Color Picker', x)
       cv2.moveWindow('Color Picker', width, 0)
 
